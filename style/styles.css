@@ -1,0 +1,555 @@
+    body {
+        background-color: #E0E0E0;
+        margin: 0;
+        padding: 0;
+        font-family: 'Oxygen', sans-serif;
+    }
+    
+    .btn {
+        cursor: pointer;
+    }
+    
+    .team-text {
+        max-width: 60%;
+        padding-bottom: 32px;
+    }
+    
+    .trust-img {
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+    
+    menu {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #EABD1A;
+        text-decoration: none;
+    }
+    
+    header {
+        padding-bottom: 20px;
+    }
+    
+    .nav-pages {
+        background-color: #5B5B5D;
+    }
+    
+    h2 {
+        font-weight: bold;
+    }
+    
+    th,
+    td {
+        padding: 1%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    main {
+        height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/HL_faria_lima.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    main section {
+        color: white;
+        padding: 10%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    main section article {
+        max-width: 390px;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 2% 8%;
+        color: white;
+        z-index: 9999;
+        transition: background-color 200ms linear;
+        height: 10vh;
+    }
+    
+    #navbar {
+        position: fixed;
+    }
+    
+    menu {
+        max-width: 80%;
+        padding-right: 6%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .call-timeline {
+        width: 82%;
+    }
+    
+    #menu-icon {
+        display: none;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icon-menu {
+        width: 100%;
+        text-align: end;
+    }
+    
+    menu h6 {
+        padding: 20px;
+    }
+    
+    .logo-img {
+        width: 200px;
+        padding: 10px;
+    }
+    
+    #quemsomos {
+        display: grid;
+        grid-template-columns: 0.2fr 1.5fr 0.5fr 0.2fr;
+        grid-template-rows: auto;
+        grid-template-areas: ". call img img";
+        background-color: #5B5B5D;
+        color: white;
+    }
+    
+    .section-call2 {
+        display: grid;
+        grid-template-columns: 0.5fr 2.5fr 2fr 0.2fr;
+        grid-template-rows: max-content;
+        grid-template-areas: ". call . .";
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/saopaulo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
+    
+    .img-call {
+        grid-area: img;
+    }
+    
+    .section-color {
+        background-color: #C9C9C9;
+        width: 100%;
+    }
+    
+    .img-call img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    
+    .call {
+        max-width: 100%;
+        padding: 40px;
+        grid-area: call;
+        align-self: center;
+    }
+    
+    .dash {
+        display: flex;
+        width: 50px;
+        border-bottom: 3px solid #EABD1A;
+        flex: 1 0 auto;
+        justify-content: space-between;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 4%;
+    }
+    
+    .cards>div {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .team_info {
+        color: white;
+        text-align: end;
+        width: 200px;
+        height: 250px;
+        padding: 1%;
+        opacity: 0.0;
+        position: absolute;
+        background-color: rgba(91, 91, 93, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    
+    .team_info:hover {
+        opacity: 1;
+        z-index: 9900;
+    }
+    
+    .team_info>a>div {
+        padding: 100px 10px 0px 60px;
+    }
+    
+    .cards>div>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .txt-team {
+        background-color: #5B5B5D;
+        width: 200px;
+        height: 250px;
+        color: white;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .center-div {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer {
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4 auto);
+        grid-template-areas: "add add add" "info1 info2 info3" "info info info";
+        grid-gap: 25px;
+        font-size: 0.8rem;
+        color: white;
+        background-color: #5B5B5D;
+    }
+    
+    .footer-adresse {
+        grid-area: add;
+    }
+    
+    .footer-information {
+        grid-area: info;
+    }
+    
+    .footer-information p {
+        width: 100%;
+    }
+    /*Pages Layout */
+    
+    .pages>section {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pages>section>header,
+    .pages>section>article {
+        max-width: 60%;
+        text-align: inherit;
+    }
+    
+    .pages>section:nth-child(odd) {
+        background-color: #C9C9C9;
+    }
+    
+    .gestor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .gestor img {
+        padding: 4%;
+        margin: 2%;
+        background-color: white;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .jumpstart::before {
+        content: "";
+        display: block;
+        height: 10vh;
+        margin: -10vh 0 0;
+    }
+    
+    .timeline {
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        padding: 56px;
+        padding-left: 96px;
+    }
+    
+    blockquote {
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+    
+    .timeline-card {
+        position: relative;
+        padding: 8px;
+        padding-top: 16px;
+        padding-bottom: 0;
+        width: 196px;
+        font-size: 12px;
+        border-left-style: solid;
+        border-bottom-style: solid;
+    }
+    
+    .timeline-icon {
+        width: 56px;
+        position: absolute;
+        top: -52px;
+        left: -28px;
+    }
+    
+    .timeline-year {
+        position: absolute;
+        bottom: -40px;
+        left: -24px;
+    }
+    
+    .line-extensor {
+        position: absolute;
+        left: -40px;
+        bottom: -3px;
+        width: 40px;
+        border-bottom-style: solid;
+    }
+    
+    @media(max-width: 1024px) {
+        .timeline {
+            align-items: center;
+            padding: 40px;
+            padding-left: 40px;
+            flex-direction: column;
+        }
+        .timeline-card {
+            font-size: 14px;
+            width: 50%;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-style: none;
+        }
+        .timeline-icon {
+            top: -40px;
+            left: 98%;
+        }
+        .timeline-year {
+            top: -16px;
+            left: -56px;
+        }
+        .line-extensor {
+            height: 32px;
+            top: -32px;
+            left: -3px;
+            border-bottom-style: none;
+            border-left-style: solid;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .timeline {
+            padding: 56px;
+        }
+        .timeline-card {
+            width: 100%;
+        }
+        .cards>div {
+            width: 150px;
+            height: 200px;
+        }
+        .txt-team {
+            width: 150px;
+            height: 200px;
+        }
+        .team_info {
+            width: 150px;
+            height: 200px;
+        }
+        main {
+            height: auto;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/HL_faria_lima.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        main section {
+            padding: 26% 18% 18% 18%;
+        }
+        menu {
+            width: 100%;
+            padding-right: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        #menu-icon {
+            display: inline-block;
+        }
+        nav {
+            max-height: 12vh;
+            padding: 4% 8%;
+        }
+        nav menu,
+        nav:active menu {
+            display: none;
+            position: absolute;
+            padding: 1px;
+            background: #fff;
+            border: 2px solid #444;
+            right: 30px;
+            top: 60px;
+            width: 40%;
+            border-radius: 4px 0 4px 4px;
+        }
+        menu a {
+            color: #444;
+            width: 100%;
+            padding: 0px 0;
+            margin: 0;
+        }
+        menu h6 {
+            padding: 8px;
+        }
+        .icon-menu {
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav:hover menu {
+            display: block;
+        }
+        .team_info>a>div {
+            padding: 70px 20px 0px 10px;
+        }
+        .logo {
+            width: 80%;
+            text-align: initial;
+        }
+        .logo-img {
+            width: 150px;
+        }
+        #quemsomos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas: "img" "call";
+            background-color: #5B5B5D;
+            color: white;
+        }
+        .call-timeline {
+            width: 100%;
+        }
+        .img-call {
+            height: 250px;
+        }
+        .section-call2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/saopaulo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        footer {
+            padding: 4%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        /*Pages Layout */
+        .pages>section>header,
+        .pages>section>article {
+            max-width: 100%;
+            text-align: inherit;
+        }
+    }
+    
+    .modal-window {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 60px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9990;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        overflow: auto;
+    }
+    
+    .modal-window:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .modal-window>div {
+        max-width: 600px;
+        position: relative;
+        margin: 5% auto;
+        padding: 2rem;
+        background: #fff;
+        color: #444;
+    }
+    
+    .modal-window header {
+        font-weight: bold;
+    }
+    
+    .modal-close {
+        color: #aaa;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+    }
+    
+    .modal-close:hover {
+        color: #000;
+    }
+    
+    .modal-window h1 {
+        font-size: 150%;
+        margin: 0 0 15px;
+    }
+    
+    .nav-colored {
+        background-color: #5B5B5D;
+    }
+    
+    .nav-transparent {
+        background-color: transparent;
+    }
