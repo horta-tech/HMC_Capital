@@ -1,99 +1,110 @@
     body {
-        background-color: #E0E0E0;
+        background-color: white;
         margin: 0;
         padding: 0;
         font-family: 'Oxygen', sans-serif;
     }
-    
+
     .btn {
         cursor: pointer;
     }
-    
+
     .team-text {
         max-width: 60%;
         padding-bottom: 32px;
     }
-    
+
     .trust-img {
         -webkit-filter: grayscale(100%);
         /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
     }
-    
+
     menu {
         margin: 0;
         padding: 0;
     }
-    
+
     a {
         color: inherit;
         text-decoration: none;
     }
-    
+
     a:hover {
         color: #006FB3;
         text-decoration: none;
     }
-    
+
     header {
         padding-bottom: 20px;
     }
-    
+
     .nav-pages {
         background-color: #0D1321;
     }
-    
+
     h2 {
         font-weight: bold;
     }
-    
+
     th,
     td {
         padding: 1%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
-    
+
     main {
-        height: 100vh;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('/img/hcm_background.jpg') no-repeat center center fixed;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/itajuba_building.jpg') no-repeat center center fixed;
         background-size: cover;
     }
-    
+
     main section {
+        text-align: center;
         color: white;
         padding: 10%;
         align-self: center;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        padding-top: calc(10% + 80px);
     }
-    
+    .word-itajuba{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/img/reunion.jpg")  no-repeat center 80px fixed;
+        background-size: cover;
+    }
+    .word-itajuba-centered{
+        background-color: #0D1321 !important;
+        color: white;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/img/reunion.jpg")  no-repeat center 80px fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .word-itajuba-centered article{
+      padding: 2% 0;
+      width: 60%;
+    }
     main section article {
-        max-width: 390px;
+        max-width: 680px;
     }
-    
+
     nav {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
-        padding: 2% 8%;
+        padding: 3% 8%;
         color: white;
         z-index: 9999;
         transition: background-color 200ms linear;
         height: 80px;
     }
-    
-    .nav-pages .logo {
-        width: 100%;
-        display: contents;
-    }
-    
+
     #navbar {
         position: fixed;
     }
-    
+
     menu {
         max-width: 80%;
         padding-right: 6%;
@@ -102,32 +113,67 @@
         justify-content: flex-end;
         align-items: center;
     }
-    
+
     .call-timeline {
         width: 82%;
     }
-    
+
     #menu-icon {
         display: none;
         width: 40px;
         height: 40px;
     }
-    
+
     .icon-menu {
         width: 100%;
         text-align: end;
     }
-    
+
     menu h6 {
         padding: 20px;
+        font-size: 18px;
     }
-    
+
     .logo-img {
-        width: 200px;
-        padding: 10px;
+        width: 300px;
     }
-    
-    #quemsomos {
+    .cards-about{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 60%;
+        padding: 1%;
+    }
+    .card-about {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        min-width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding: 1%;
+        background-color:#efefef;
+      }
+      
+      /* On mouse-over, add a deeper shadow */
+      .card-about:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .card-about img{
+          max-width: 100%;
+          height: 80px;
+      }
+      .card-about p{
+        max-width: 200px;
+        align-self: flex-start;
+    }
+
+
+    #quemsomos, .word-itajuba {
         display: grid;
         grid-template-columns: 0.2fr 1.5fr 0.5fr 0.2fr;
         grid-template-rows: auto;
@@ -135,39 +181,53 @@
         background-color: #0D1321;
         color: white;
     }
-    
+
     .section-call2 {
         display: grid;
         grid-template-columns: 0.5fr 2.5fr 2fr 0.2fr;
         grid-template-rows: max-content;
         grid-template-areas: ". call . .";
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/hcm_background2.jpg') no-repeat center center fixed;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/saopaulo.jpg') no-repeat center center fixed;
         background-size: cover;
         color: white;
     }
-    
+    .word-itajuba .call, #quemsomos .call{
+        padding: 8% 4% ;
+    }
     .img-call {
         grid-area: img;
     }
-    
+
     .section-color {
-        background-color: #b1bdc8;
+        background-color: #0D1321;
         width: 100%;
     }
-    
+
     .img-call img {
         width: 100%;
         max-height: 100%;
         object-fit: cover;
     }
-    
+
     .call {
+        text-align: center;
         max-width: 100%;
         padding: 40px;
         grid-area: call;
         align-self: center;
     }
-    
+    .call-centered{
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center !important;
+    }
+    .call-centered h4{
+      width: 60%;
+    }
+    .call h4{
+        width: 60%;
+    }
     .dash {
         display: flex;
         width: 50px;
@@ -175,21 +235,21 @@
         flex: 1 0 auto;
         justify-content: space-between;
     }
-    
+
     .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 960px;
+        max-width: 860px;
         margin: 0 auto;
         padding: 4%;
     }
-    
+
     .cards>div {
         width: 200px;
         height: 250px;
     }
-    
+
     .team_info {
         color: white;
         text-align: end;
@@ -203,40 +263,41 @@
         flex-direction: column;
         align-content: space-around;
     }
-    
+
     .team_info:hover {
         opacity: 1;
         z-index: 9900;
     }
-    
+
     .team_info>a>div {
         padding: 100px 10px 0px 60px;
     }
-    
+
     .cards>div>img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+    .gestor-call{
+        padding: 2% 8%;
+    }
     .txt-team {
-        background-color: #0D1321;
+        background-color: #E0E0E0;
         width: 200px;
         height: 250px;
-        color: white;
         padding: 2%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .center-div {
         padding: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     footer {
         padding: 2%;
         display: grid;
@@ -248,20 +309,20 @@
         color: white;
         background-color: #0D1321;
     }
-    
+
     .footer-adresse {
         grid-area: add;
     }
-    
+
     .footer-information {
         grid-area: info;
     }
-    
+
     .footer-information p {
         width: 100%;
     }
     /*Pages Layout */
-    
+
     .pages>section {
         padding: 40px;
         display: flex;
@@ -269,49 +330,58 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .pages>section>header,
     .pages>section>article {
         max-width: 60%;
         text-align: inherit;
     }
-    
-    .pages>section:nth-child(odd) {
-        background-color: #C9C9C9;
+
+    .pages>section:nth-child(odd){
+        background-color: #58585D;
     }
-    
+
     .gestor {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .gestor> :nth-child(n) {
-        width: 25%;
+        width: 30%;
         height: 200px;
         background-color: white;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: 2%;
+        
     }
-    
+
     .gestor img {
-        padding: 6%;
+       
         background-color: white;
         width: 100%;
         max-height: 100%;
-        object-fit: contain;
+        object-fit: scale-down;
     }
-    
+
+    .gestor a {
+      filter: grayscale(100%);
+    }
+
+    .gestor a:hover {
+        filter: none;
+    }
+
     .jumpstart::before {
         content: "";
         display: block;
         height: 80px;
         margin: -80px 0 0;
     }
-    
+
     .timeline {
         max-width: 100%;
         justify-content: center;
@@ -319,12 +389,12 @@
         padding: 56px;
         padding-left: 96px;
     }
-    
+
     blockquote {
         font-size: 1.6rem;
         font-weight: bolder;
     }
-    
+
     .timeline-card {
         position: relative;
         padding: 8px;
@@ -335,20 +405,20 @@
         border-left-style: solid;
         border-bottom-style: solid;
     }
-    
+
     .timeline-icon {
         width: 56px;
         position: absolute;
         top: -52px;
         left: -28px;
     }
-    
+
     .timeline-year {
         position: absolute;
         bottom: -40px;
         left: -24px;
     }
-    
+
     .line-extensor {
         position: absolute;
         left: -40px;
@@ -356,7 +426,7 @@
         width: 40px;
         border-bottom-style: solid;
     }
-    
+
     @media(max-width: 1024px) {
         .timeline {
             align-items: center;
@@ -387,7 +457,7 @@
             border-left-style: solid;
         }
     }
-    
+
     @media (max-width: 600px) {
         .timeline {
             padding: 56px;
@@ -413,7 +483,22 @@
             background-size: cover;
         }
         main section {
-            padding: 26% 18% 18% 18%;
+            padding: 26% 5% 5% 5%;
+        }
+        h4 {
+        	font-size: 1.2rem;
+        }
+         h2 {
+        	font-size: 1.5rem;
+        }
+        .call{
+        	display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .call-centered h4{
+       		width:90%;
+       		padding:5% 0% ;
         }
         menu {
             width: 100%;
@@ -423,6 +508,7 @@
             align-items: center;
             margin: 0;
         }
+        
         #menu-icon {
             display: inline-block;
         }
@@ -504,8 +590,21 @@
             max-width: 100%;
             text-align: inherit;
         }
+        .pages>section{
+        	padding:20px;
+        }
+        .equipe-itajuba{
+        padding:0!important;
+        }
+        .gestor> :nth-child(n) {
+        	width: 40%;
+        	height: 100px;
+        	display: flex;
+        	flex-wrap: wrap;
+        
+    	}
     }
-    
+
     .modal-window {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.8);
@@ -521,12 +620,12 @@
         transition: all 0.3s;
         overflow: auto;
     }
-    
+
     .modal-window:target {
         opacity: 1;
         pointer-events: auto;
     }
-    
+
     .modal-window>div {
         max-width: 600px;
         position: relative;
@@ -535,11 +634,11 @@
         background: #fff;
         color: #444;
     }
-    
+
     .modal-window header {
         font-weight: bold;
     }
-    
+
     .modal-close {
         color: #aaa;
         line-height: 50px;
@@ -551,20 +650,20 @@
         width: 70px;
         text-decoration: none;
     }
-    
+
     .modal-close:hover {
         color: #000;
     }
-    
+
     .modal-window h1 {
         font-size: 150%;
         margin: 0 0 15px;
     }
-    
+
     .nav-colored {
         background-color: #0D1321;
     }
-    
+
     .nav-transparent {
         background-color: transparent;
     }
